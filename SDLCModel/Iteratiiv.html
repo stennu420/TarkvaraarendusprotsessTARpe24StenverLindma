@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iterative ehk iteratiivne arendusmudel</title>
+</head>
+<body>
+    <h1>Interatiivne arendusmudel</h1><br/>
+    <p>
+        Interatiivne arendusmudel on SDLC meetod, mille eesmärk on lahendada probleem mille tekitab<br/>
+        tavaline jäikmudel. Jäikmudeli nagu Waterfall rakendamisel ei saa muudatusi teha arenduse<br/>
+        teostamise ajal. Iteratiivsed arendusmudelid aga lubavad seda teha iga iteratsiooni vahel<br/>
+        Iteratiivme arendusmudel on ise ka tegelikutl kobminatsioon Iteratiivsest endast ja <br/>
+        Inkremenaatmudelist, sest seetõttu , et ühe iteratsiooni ajal saab kas olemasolevat struktuuri<br/>
+        muuta (uus iteratsioon vanast või lisad selle midagi juurde uus inkremant vanale).<br/>
+    </p><br><br/>
+    <h2>Kus saab interatiivset arendusmudelit kasutada?</h2>
+    <p>
+        - Interatiivne arendusmudel sobib näiteks juhul kui kilent või lõppkasutaja vajab mõne funktsioon<br/>
+        teistsugust toimimist või midagi uut juurde.<br/>
+        Näide: On olemas MMORPG kus mänija saab tappa koletisi, aga mängiad soodivad ka teisi<br/>
+        mängijaid tappa. Arendusmeeskond võtab kuulda, ning arendab juurde meetodi ja funktsoonid<br/>
+        koos muude multimeediavaradega selle mängijale võimalikuks muutmiseks<br/>
+        Tulemuseks on see, et avatakse 1v1 areen<br/>
+        - Arendusmudel sobib ka sellistel juhtudel kus tingimused arenduseks on ühiselt määratud<br/>
+        ning kõigile meeskonna liikmetele selgeda ja ühiselt arusaadavad<br/>
+        - Iteratiivne arendusmudel sobib ka olukordades, kus on turu ja/või konkurentsisurve mingis<br/>
+        tootekategoorias. Võib olla kas siis uue arendus lastakse välja osalise funktsionaalsusega<br/>
+        või arendataskse vanale olemasolevale projektile uus osa juurde, samuti osalise funkstionaalsusega<br/>
+        - Saab kasutada arendusmudelit ka siis kui projekt rakendab uutses metoodikat või tehnoloogiat<br/>
+        mingisuguse lahenduse arendamiseks, ning mille käigus meeskonnaliikmed paraleelselt ka õpivad <br/>
+        uut tööriista/metoodikat tundam.<br/>
+        - Vüi siis saab kasutada kui projekti eesmärk ajas muutub. Projekt algab ühe eesmärgiga,kuid<br/>
+        kasutajatestimine näitab hoopis mõne kõrvalise funktsionaaluses kasulikumat olekut või kasutatakse<br/>
+        toodet eeldatust täielikult teistmoodi, Sellisel juhul saab arendsumeeskond suunata projekti ümber<br/>
+        kasutajate poolt ettenäidatud käitlemise suunas(arendus sihitakse kuidas kasutaja kasutab<br/>
+        mitte kuidas arendajad seda ette nägid.)<br/>
+    </p><br><br/>
+    <h2>Etapid</h2>
+    <p>
+        <h3>Eeluuring</h3>
+        Teostatakse süsteemi tasuvusuuring, et näha kas ja kuidas arendustöö ennast ära tasub. Ning selle<br/>
+        põhjla otsutakse, kuidas arendstöö läbi viiaske ja kas üldse läbi viiakse.
+        <h3>Süsteemi nõuded ja analüüs</h3>
+        Kaardistatakse ära mida klien tahab mida lõppkasutaja teha tahab, mida selle programmiga üldse teha saab<br/>
+        mis on vaja selle süteemi toimimiseks ( infrastruktuurm riistvaram serveridm teised äpid jne)<br/>
+        Internatsiooni alguses kogutakse ka tagasisisdet kliendilt ja kautajatelt ning täpsustatakse nõudeid<br/>
+        kas siis uue osa lisamiseks või vana osa uuseks iteratsiooniks<br/>
+        <h3>arhitektuur projekteerimin ja/või parandamine</h3>
+        Selles etapis töötdatakse välja lahenddus mis on vastavuses nmõuetega või kui ei ole siis seda parandatakse<br/>
+        et teda nõuetega vastavusse viia.. Et arhitektuuri oleks kooskõlas nõuetest tulevate tingimusteg<br/>
+        <h3>Arendus</h3>
+        Toimub arendustöö programeerimise näel , et täita nõudeid, mis süsteemil vaja.
+        <h3>Testimine</h3>
+        Selles etapis kontrollitakse , et eelnevas etapis arendatud töö toimiks nii , nagu seda nõuetes <br/>
+        sätestatud on<br/>
+        <h3>Kasutuselevõtt</h3>
+        Seee etapp toimub siis kui testimine on tõestanud et programm töötab ning programm suudab käitleda  ka <br/>
+        mingis ulatuses ootamatusi. Kui programm ei ole valmis muu süsteemi integreerimiseks<br/>
+        korratakse eelmis etappe niikaua kuni ta on kui prigramm on valmis siis toimub integratsioon<br/>
+        muu vajaliku süsteemiga. Näiteks: Linux distro versioon on valmis ja kasutajale pakutaske<br/>
+        versiooniuuendust. Installatsioon intgreerib uuse distro versiion sinu raudvarga<br/>
+    </p><br><br/</br/>
+    <h2>Arendusmudeli joonis</h2>
+    <img src=pilt.png/>
+    <h2>Tugevused ja puudjäägid</h2>
+    <table>
+        <th>
+            <tr>
+                <td>Tugevused</td>
+                <td>Puudujäägid</td>
+            </tr>
+        </th>
+        <tbody>
+            <tr>
+                <td>Paindlikus mis tagab kiired tulemused.<br/>
+                    saab jaotada kliendi poolt tulenud probleemi või nõuded mitmeks<br/>
+                    väiksemaks osaks, ning need omakord üksikuteks funktsioonideks.<br/>
+                    See aitab saada mingisuguse versiooni tootest üsana kiirest.<br/>
+                    Olenevalt projektist isegi tundidega või mõne päevaha. SDelline<br/>
+                    tükeldamie lubab arendusmeeskonnal endale parajad probleemid ette seada.</td>
+                <td>
+                    Projekti edasises arendusjärgus või hilises etapis võivad muudatused<br/>
+                    (olenevalt selle suurusest ja kontekstitst )muutuda kulukask. Näiteks <br/>
+                    leitakse üles struktuuri fundamentaale viga, ning see algne arenndusttö<br/>
+                    on nüüd  mitme erinva teenuse või funktsioonikihia all. Muudatus siin<br/>
+                    tähendab muudatui ka kõikides teises süsteemides mis selle tuginevad<br/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Lihtne omaksvõtt ning kliendi rahulolu. TÄnu pidevatele uuendustel, on<br/>
+                    iteratiivne arendus arendajale mugav lubades võtta poolepealt juurde uusi<br/>
+                    nõudeid või soove kliendilt, tagades kliendile sobivama toote. Interatiivses<br/>
+                    mudelis eitakse ka vead suhtelist ruttu üles, ning nende parandamine<br/>
+                    tõhustan toote rakendamis ja omaksvõttu ka kasutajaile.Vigade parandus<br7>
+                    ise toimub ka jooksvalt<br/>
+                </td>
+                <td>
+                    Kõrgem surve, et saada projektile kasutajaid, kes peavad siis toote kohta<br/>
+                    arendajaile tagasisidet andma.Kosemudelis saab kasutaja toote kätte alles<br/>
+                    arenduse lõpus, pärasat mida muudatusi sisse viia ei ole võimalik. Kuna<br/>
+                    iteratiivses ei ole 100% nõudeid arendustöö alguses määratud, saadakse <br/>
+                    täiendaviad nõudeid lõppkasutajalet arenduse ajal.<br/>
+                </td>
+            </tr>
+            <tr>
+                <td>Lihtne versioonihaldus. Iteratiivses arenduse on põhimõtteliselt iga uus<br/>
+                     väljalse uus versioon,mis aitab ärahoida  katkise süsteemi leviku. Näiteks:<br/>
+                     Lastakse välja FPS mängus patch mis rikub ära kasutaja hüppamis füüsika<br/>
+                     (on lag), arendusmeeskond saab reageerida sellle kiirelt, keerates live<br/>
+                     väljalaske tagasi vanele versioonile, parandab vead, ning siis laseb juba<br/>
+                     parandatud patchi uuesti väljae.<br/>
+                </td>
+                <td>
+                    Eripäarade ja omaduste kasutajni jõudmine. Tihitpeale peavad kasutajad uusi<br/> 
+                    funktsioone arenduskeskonnalt ise küsima, või ootama kuni arendsujärk selle<br/>
+                    funktsiooni mis neil vaja on, jõuab. Uute versioonide puhul peavad kasutajad<br/>
+                    harjuma ka uute kasutajaliideste eripäradega , või koguni täielkult uue <br/>
+                    kasutajaliidesega.Uuega harjumine kasutajle võtab aega ja tahtmist<br/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Sobib organisatsioonidele mis rakendavad erinevaaid agiilised arendus-<br/>
+                    metoodiga praktikaid. Ta toimib väga hästi väiksemates agiilsetes rühmades,<br/>
+                    kus vastutus on jaotatav meeskonnaliikmete vahel, ning mis võimaldab<br/>
+                    interatsiooni läbida suhteliselt kergelt ning kiirelt. (Mugav arendajatele),<br/>
+                </td>
+                <td>---</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
