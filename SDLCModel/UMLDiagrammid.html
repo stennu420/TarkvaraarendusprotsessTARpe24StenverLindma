@@ -35,11 +35,7 @@
     <p>
         Use Case diagram on kasutusjuhtude diagramm näitab, kes süsteemi kasutavad</br>
         ja mida nad süsteemiga teha saavad.<br/>
-    </p>
-    <p>
-        <a href="mermaid-diagram.png" target="_blank"><img src="mermaid-diagram.png" alt="Use Case Diagramm"></a>
-    </p>
-    <br></br>
+    </p><br></br>
     <h2>Class Diagramm</h2>
     <p>
         Class diagram on süsteemi staatilise struktuuri kirjeldamise jaoks</br>
@@ -59,6 +55,79 @@
     </p><br><br>
     <h2>Vabalt valitud skeemitüüp</h2>
     <p>
+        <img src="https://www.uml-diagrams.org/?utm_source=chatgpt.com" alt="Vabalt valitud skeem" width="600" height="400">
+    </p><br><br>
+    <h1>ERD Diagramm</h1>
+    <p>
+        ERD diragram on suhete ja mudelite kirjeldamiseks, mis on seotud andmebaasidega</br>
+        See näitab ära millised tabelid andmebaasis on, millised väljad neil tabelitel on ja</br>
+        kuidas need tabelid omavahel seotud on.ERD põhimudel koosneb olemitüüpidest ja see määrab</br>
+        ära seosed,mis võivad olemite vhel eksisterida</br>
+    </p><br><br>
+    <h2>Kus kasutatakse ERD diagramme</h2>
+    <p>
+        ERD diagramme kasutatakse peamiselt andmebaasi disainis nagu MySQL ja PostgreSQL</br>
+        Seda on ka infosüsteemide analüüsis ja disainis, et mõista andmete struktuuri ja seoseid süsteemis</br>
+        Tarkvaraarenduses kasutatakse ERD diagramme, et mõista andmete struktuuri ja seoseid süsteemis</br>
+         ning aidata kaasa andmebaasi disainile</br>
+        Äriprotsesside modelleerimisel kasutatakse ERD diagramme, et mõista andmete struktuuri ja </br>
+        seoseid äriprotsessides ning aidata kaasa äriprotsesside disainile</br>
+    </p><br><br>
+    <h2>ERD diagrammi elemendid</h2>
+    <p>
+        ERD põhielemendi on Olemid,Atribuddid,Seosed ja Ühenduselemendid<br/>
+        Olemid (Entities) Esindavad objekte nt(Klient ja Toode)<br/>
+        Tavaliselt kujutatakse neid ristkülikutena<br/>
+        Need vastavad sageli andmebaasi tabelitele<br/>
+    </p><br><br>
+    <h2>Atribuudid</h2>
+    <p>
+        Atribuudid(Attributes) on olemite omadused nt(nimi, ID ja hind)<br/>
+        Neid kujutatakse tavaliselt ovaalidena<br/>
+        Mõned atribuudid võivad olla kohustuslikud,unikaalsed või arvutatavad<br/>
     </p>
-</body>
-</html>
+    <h2>Seoased</h2>
+    <p>
+        Seosed(Relatisonships) need näitavad,kuidas olemitest tekivad seosed nt(Klient teeb Tellimuse)<br/>
+        Seal kujuntatakse joonte või rombidena<br/>
+    </p><br><br>
+    <h2>Ühenduselemendid</h2>
+    <p>
+        Seal näidatakse mitu kirjet võib olla seotud: 1:1, 1:N, N:M<br/>
+        Otsade tähendused(Crow's Foot Notation) näitavad seose tüüpi ja kardinaalsust<br/>
+    </p><br><br>
+    <h1>ERD Keys(võtmed)</h1>
+    <h2>Primary Key</h2>
+    <p>
+        Primary Key ehk primaarvõti sellel on oluline roll andmete täpsuse ja terviklikkuse tagamisel<br/>
+        See on unikaalne identifikaator, mis eristab iga kirjet tabelis<br/>
+        Primary Key peab olema unikaalne ja mitte-null<br/>
+    </p><br><br>
+    <h2>Foreign Key</h2>
+    <p>
+        Foregin Key ehk võõrvõti lühitalt FK see on ERD atribuut,mis viitab teise tabeli Primary Key-le<br/>
+        Seda kasutatakse kahe tabeli vahel seose loomiseks.See viitab teise tabeli primaarvõtmele<br/>
+        Foreign Key aitab tagada andmete terviklikkust ja võimaldab andmeid tõhusalt seostada<br/>
+
+    </p><br><br>
+    <h2>Composite Key</h2>
+    <p>
+        Composite Key ehk koosnevvõti see on ERD atribuut,mis koosneb mitmest atribuudist,</br>
+        mis koos moodustavad unikaalse identifikaatori<br/>
+        Seda kasutatakse siis, kui ükski atribuut ei ole piisavalt unikaalne,et<br/>
+    </p><br><br>
+    <h2> Key</h2>
+    <p>
+        Key ehk võti on ERD atribuut,mis on määratud võtmena<br/>
+        See võib olla Primary Key,Foreign Key või Composite Key<br/>
+        Võtmed on olulised andmete täpsuse ja terviklikkuse tagamisel<br/>
+    </p><br><br>
+    <h2>Koos olemitabelis keyde kasutamine</h2>
+    <p>
+        Erinevaid key-si kasutatakse relatsioonnandmebaasides nagu SQL<br>
+        tabelite struktuuri tegemiseks ja seoste loomiseks<br/>
+        PK ehk Primary Key idenfitseerib unikaalse rea, FK ehk Foreign Key loob seose<br>
+        teiste tabelitega,<br>
+         CK ehk Composite Key koosneb mitmest atribuudist, mis võib olla PK või FK,<br>
+         mis kasutab mitut veergu<br/>  
+    </p>
