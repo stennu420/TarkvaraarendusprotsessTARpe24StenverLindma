@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flowchart</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #fff7ed, #f8fafc);
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #c2410c;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 18px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #c2410c;
+        }
+
+        h3 {
+            color: #ea580c;
+        }
+
+        .box {
+            background: #fff7ed;
+            padding: 15px;
+            border-left: 5px solid #fb923c;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+
+        .example {
+            background: #431407;
+            color: #ffedd5;
+            padding: 15px;
+            border-radius: 10px;
+            font-family: Consolas, monospace;
+            white-space: pre-line;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 12px;
+            border: 1px solid #d1d5db;
+            margin-top: 15px;
+        }
+
+        a {
+            color: #c2410c;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Flowchart / Activity Diagram</h1>
+    <p>Vooskeem protsessi kirjeldamiseks</p>
+</header>
+
+<main>
+
+<section>
+    <h2>Mis on Flowchart?</h2>
+    <p>
+        Flowchart ehk vooskeem on diagramm, mis näitab protsessi või algoritmi
+        samm-sammult. Iga tegevus kujutatakse kindla kujundiga ning nooled näitavad,
+        mis järjekorras sammud toimuvad.
+    </p>
+</section>
+
+<section>
+    <h2>Kus Flowchart diagramme kasutatakse?</h2>
+    <ul>
+        <li>programmi loogika planeerimisel</li>
+        <li>algoritmide kirjeldamisel</li>
+        <li>veebirakenduse töövoo selgitamisel</li>
+        <li>äriprotsesside kirjeldamisel</li>
+        <li>otsustusprotsesside näitamisel</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Flowchart kujundid</h2>
+
+    <h3>Start / End</h3>
+    <p>
+        Ovaal tähistab protsessi algust või lõppu.
+    </p>
+    <div class="example">
+( Start )
+    </div>
+
+    <h3>Process</h3>
+    <p>
+        Ristkülik tähistab tegevust või sammu, mida süsteem teeb.
+    </p>
+    <div class="example">
+[ Arvuta Bitcoini väärtus ]
+    </div>
+
+    <h3>Input / Output</h3>
+    <p>
+        Rööpkujund tähistab andmete sisestamist või tulemuse väljastamist.
+    </p>
+    <div class="example">
+/ Sisesta Bitcoin kogus /
+    </div>
+
+    <h3>Decision</h3>
+    <p>
+        Romb tähistab tingimust või otsustuskohta, kus protsess võib liikuda
+        erinevates suundades.
+    </p>
+    <div class="example">
+< Kas sisend on korrektne? >
+    </div>
+
+    <h3>Arrow</h3>
+    <p>
+        Nool näitab protsessi liikumise suunda.
+    </p>
+    <div class="example">
+Start → Sisesta andmed → Arvuta → Näita tulemus
+    </div>
+</section>
+
+<section>
+    <h2>Kasutusnäidis</h2>
+    <p>
+        Näiteks Bitcoini kalkulaatori puhul saab vooskeemi abil näidata,
+        kuidas kasutaja sisestab Bitcoini koguse, süsteem kontrollib sisendit,
+        arvutab väärtuse ja kuvab tulemuse.
+    </p>
+
+    <div class="example">
+Start
+↓
+Kasutaja sisestab Bitcoin koguse
+↓
+Kas sisend on korrektne?
+↓ jah
+Arvuta väärtus eurodes
+↓
+Kuva tulemus
+↓
+End
+    </div>
+</section>
+
+<section>
+    <h2>Bitcoin kalkulaatori vooskeem</h2>
+    <p>
+        Näidisena saab kasutada varem Bitcoinäpi tegemisel loodud vooskeemi.
+    </p>
+
+    <a href="../bitcoin/flowchart.png">Vaata Bitcoin kalkulaatori vooskeemi</a>
+
+    <br>
+
+    <img src="img/flowchart.png" alt="Bitcoin kalkulaatori vooskeem">
+</section>
+
+<section>
+    <h2>Viited infoallikaile</h2>
+    <ul>
+        <li><a href="https://www.lucidchart.com/pages/what-is-a-flowchart-tutorial" target="_blank">Lucidchart - What is a Flowchart</a></li>
+        <li><a href="https://www.visual-paradigm.com/tutorials/flowchart-tutorial/" target="_blank">Visual Paradigm - Flowchart Tutorial</a></li>
+        <li><a href="https://www.geeksforgeeks.org/software-engineering/software-engineering-flowchart/" target="_blank">GeeksforGeeks - Flowchart</a></li>
+    </ul>
+</section>
+
+</main>
+
+</body>
+</html>
