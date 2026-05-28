@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERD</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f0fdf4, #f8fafc);
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #166534;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            margin-bottom: 25px;
+            border-radius: 18px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #166534;
+        }
+
+        h3 {
+            color: #15803d;
+        }
+
+        .box {
+            background: #f0fdf4;
+            padding: 15px;
+            border-left: 5px solid #22c55e;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+
+        .example {
+            background: #052e16;
+            color: #dcfce7;
+            padding: 15px;
+            border-radius: 10px;
+            font-family: Consolas, monospace;
+            white-space: pre-line;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 12px;
+            border: 1px solid #d1d5db;
+            margin-top: 15px;
+        }
+
+        a {
+            color: #166534;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>ERD Diagrammid</h1>
+    <p>Entity Relationship Diagram</p>
+</header>
+
+<main>
+
+<section>
+    <h2>Mis on ERD diagramm?</h2>
+    <p>
+        ERD ehk Entity Relationship Diagram on diagramm, mida kasutatakse andmebaasi
+        struktuuri planeerimiseks ja kirjeldamiseks. ERD näitab olemeid, nende atribuute
+        ja seoseid teiste olemitega.
+    </p>
+</section>
+
+<section>
+    <h2>Kus ERD diagramme kasutatakse?</h2>
+    <ul>
+        <li>andmebaaside planeerimisel</li>
+        <li>SQL tabelite loomisel</li>
+        <li>infosüsteemide arendamisel</li>
+        <li>andmete omavaheliste seoste kirjeldamisel</li>
+        <li>backend süsteemide kavandamisel</li>
+    </ul>
+</section>
+
+<section>
+    <h2>ERD ühenduselemendid</h2>
+
+    <h3>One-to-One ehk 1 : 1</h3>
+    <p>
+        Üks kirje ühes tabelis on seotud ainult ühe kirjega teises tabelis.
+        Näiteks ühel inimesel võib olla üks ID-kaart.
+    </p>
+    <div class="example">
+Inimene |---------| ID-kaart
+    </div>
+
+    <h3>One-to-Many ehk 1 : N</h3>
+    <p>
+        Üks kirje ühes tabelis võib olla seotud mitme kirjega teises tabelis.
+        Näiteks ühel kliendil võib olla mitu tellimust.
+    </p>
+    <div class="example">
+Klient |---------< Tellimus
+    </div>
+
+    <h3>Many-to-Many ehk M : N</h3>
+    <p>
+        Mitu kirjet ühes tabelis võivad olla seotud mitme kirjega teises tabelis.
+        Näiteks õpilane võib osaleda mitmel kursusel ja kursusel võib olla mitu õpilast.
+        Selle jaoks kasutatakse tavaliselt vahetabelit.
+    </p>
+    <div class="example">
+Õpilane >---------< Kursus
+    </div>
+
+    <h3>Otsade tähendused</h3>
+    <ul>
+        <li><strong>|</strong> tähendab üks</li>
+        <li><strong>O</strong> tähendab null või valikuline</li>
+        <li><strong>&lt;</strong> tähendab mitu</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Olemitabel</h2>
+    <p>
+        Olemitabel kujutab ERD diagrammis ühte tabelit või objekti. Olemitabelis
+        näidatakse tavaliselt tabeli nimi ja selle väljad.
+    </p>
+
+    <h3>Olemitabelis peab olema:</h3>
+    <ul>
+        <li>olemi ehk tabeli nimi</li>
+        <li>vähemalt üks atribuut</li>
+        <li>Primary Key ehk primaarvõti</li>
+    </ul>
+
+    <h3>Olemitabelis võib olla:</h3>
+    <ul>
+        <li>Foreign Key</li>
+        <li>andmetüübid</li>
+        <li>unikaalsuse piirangud</li>
+        <li>nullable info</li>
+        <li>vaikimisi väärtused</li>
+    </ul>
+
+    <div class="example">
+KLIENT
+-------------------------
+PK klient_id
+nimi
+email
+telefon
+    </div>
+</section>
+
+<section>
+    <h2>Võtmed ERD diagrammis</h2>
+
+    <h3>Primary Key</h3>
+    <p>
+        Primary Key ehk primaarvõti on väli, mis tuvastab iga tabelirea unikaalselt.
+        Näiteks tabelis Klient võib primaarvõti olla klient_id.
+    </p>
+
+    <h3>Foreign Key</h3>
+    <p>
+        Foreign Key ehk võõrvõti on väli, mis viitab teise tabeli Primary Key väärtusele.
+        Näiteks Tellimus tabelis võib klient_id viidata Klient tabeli klient_id väljale.
+    </p>
+
+    <h3>Composite Key</h3>
+    <p>
+        Composite Key ehk liitvõti koosneb mitmest väljast. Seda kasutatakse näiteks
+        vahetabelites, kus üks väli üksi ei ole piisav unikaalse rea tuvastamiseks.
+    </p>
+
+    <h3>Key</h3>
+    <p>
+        Key on üldnimetus väljale või väljade kogumile, mida kasutatakse andmete
+        tuvastamiseks, sidumiseks või otsimiseks.
+    </p>
+</section>
+
+<section>
+    <h2>Kuidas võtmeid olemitabelitega kasutatakse?</h2>
+    <p>
+        ERD diagrammis kasutatakse Primary Key ja Foreign Key välju selleks, et näidata
+        tabelitevahelisi seoseid. Primary Key asub põhitabelis ja Foreign Key asub tabelis,
+        mis sellele viitab.
+    </p>
+
+    <div class="example">
+KLIENT
+-------------------------
+PK klient_id
+nimi
+email
+
+TELLIMUS
+-------------------------
+PK tellimus_id
+FK klient_id
+kuupaev
+summa
+    </div>
+
+    <p>
+        Selles näites on Klient tabelis klient_id primaarvõti. Tellimus tabelis on
+        klient_id võõrvõti, sest see viitab Klient tabelile.
+    </p>
+</section>
+
+<section>
+    <h2>Näidis ERD</h2>
+    <img src="img/erd.png" alt="ERD diagrammi näidis">
+</section>
+
+<section>
+    <h2>Viited infoallikaile</h2>
+    <ul>
+        <li><a href="https://www.lucidchart.com/pages/er-diagrams" target="_blank">Lucidchart - ER Diagram</a></li>
+        <li><a href="https://www.visual-paradigm.com/guide/data-modeling/what-is-entity-relationship-diagram/" target="_blank">Visual Paradigm - What is ERD</a></li>
+        <li><a href="https://www.geeksforgeeks.org/dbms/introduction-of-er-model/" target="_blank">GeeksforGeeks - ER Model</a></li>
+    </ul>
+</section>
+
+</main>
+
+</body>
+</html>
