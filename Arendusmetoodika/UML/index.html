@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UML</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #eef2ff, #f8fafc);
+            color: #1f2937;
+        }
+
+        header {
+            background: #1e3a8a;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 42px;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 30px auto;
+            padding: 20px;
+        }
+
+        nav {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav li {
+            margin-bottom: 12px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #2563eb;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            background: white;
+            padding: 25px;
+            border-radius: 18px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            color: #1e3a8a;
+            margin-top: 0;
+        }
+
+        .description {
+            font-weight: bold;
+            color: #2563eb;
+            margin-top: 20px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 750px;
+            margin-top: 15px;
+            border-radius: 12px;
+            border: 1px solid #d1d5db;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.12);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>UML Diagrammid</h1>
+    </header>
+
+    <main>
+
+        <nav>
+            <ul>
+                <li><a href="flowchart.html">Flowchart / Activity Diagram</a></li>
+                <li><a href="erd.html">ERD (Entity Relationship Diagram)</a></li>
+            </ul>
+        </nav>
+
+        <section>
+
+            <h2>Class Diagram</h2>
+
+            <p class="description">Lühikirjeldus</p>
+
+            <p>
+                Class diagram näitab süsteemi struktuuri, klasside omadusi,
+                meetodeid ja omavahelisi seoseid.
+            </p>
+
+            <p class="description">Elemendid</p>
+
+            <ul>
+                <li><strong>Klass (Class)</strong></li>
+                <li><strong>Atribuudid (Attributes)</strong></li>
+                <li><strong>Meetodid (Methods)</strong></li>
+                <li><strong>Association</strong></li>
+                <li><strong>Inheritance</strong></li>
+                <li><strong>Composition</strong></li>
+            </ul>
+
+            <p class="description">Näidisjoonis</p>
+
+            <img src="img/pilt1.png" alt="Class Diagram">
+
+        </section>
+        <br>
+        <section>
+            <h2>Component Diagram</h2>
+            <p class="description">Lühikirjeldus</p>
+            <p>
+                 Component diagram näitab süsteemi komponente ja nendevahelisi sõltuvusi.
+            </p>
+
+             <p class="description">Elemendid</p>
+            <ul>
+                <li><strong>Komponent</strong></li>
+                <li><strong>Interface</strong></li>
+                <li><strong>Dependency</strong></li>
+                <li><strong>Connector</strong></li>
+            </ul>
+
+             <p class="description">Näidisjoonis</p>
+
+            <img src="img/pilt2.png" alt="Component Diagram">
+        </section>
+        <br>
+        <section>
+            <h2>Sequence Diagram</h2>
+            <p class="description">Lühikirjeldus</p>
+            <p>
+                 Sequence diagram näitab, kuidas süsteemi osad ja objektid suhtlevad.
+                 Seda kasutatakse näiteks selleks, et näidata kuidas rakendus ja andmed
+                 päringuid saadavad.
+            </p>
+
+            <p class="description">Elemendid</p>
+            <ul>
+                <li><strong>Actor/Objekt</strong></li>
+                <li><strong>Lifeline</strong></li>
+                <li><strong>Message arrow</strong></li>
+                <li><strong>Return message</strong></li>
+                <li><strong>Activation bar</strong></li>
+            </ul>
+
+             <p class="description">Näidisjoonis</p>
+
+            <img src="img/pilt3.png" alt="Sequence Diagram">
+        </section>
+        <br>
+        <section>
+            <h2>State Diagram</h2>
+            <p class="description">Lühikirjeldus</p>
+            <p>
+                 State diagram näitab,kuidas objektid erinevad ja seda,kuidas
+                 objekt ühest olekst teise liigub.
+            </p>
+
+            <p class="description">Elemendid</p>
+            <ul>
+                <li><strong>Alguspunkt</strong></li>
+                <li><strong>Olek</strong></li>
+                <li><strong>Üleminek</strong></li>
+                <li><strong>Sündmus</strong></li>
+                <li><strong>Lõppoleks</strong></li>
+            </ul>
+
+             <p class="description">Näidisjoonis</p>
+
+            <img src="img/pilt4.png" alt="State Diagram">
+            
+    </main>
+
+</body>
+</html>
