@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<<<<<<< HEAD
 <html lang="et">
 <head>
     <meta charset="UTF-8">
@@ -61,10 +62,30 @@
 
         nav a:hover {
             text-decoration: underline;
+=======
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UML Diagrammid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+            background-color: #f8f9fa;
+        }
+
+        h1, h2, h3 {
+            color: #222;
+>>>>>>> dee634081f22403fb90fb4c5107531ba57d5e0c4
         }
 
         section {
             background: white;
+<<<<<<< HEAD
             padding: 25px;
             border-radius: 18px;
             box-shadow: 0 8px 20px rgba(0,0,0,0.08);
@@ -79,12 +100,19 @@
             font-weight: bold;
             color: #2563eb;
             margin-top: 20px;
+=======
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+>>>>>>> dee634081f22403fb90fb4c5107531ba57d5e0c4
         }
 
         ul {
             padding-left: 20px;
         }
 
+<<<<<<< HEAD
         li {
             margin-bottom: 8px;
         }
@@ -208,6 +236,205 @@
             <img src="img/pilt4.png" alt="State Diagram">
             
     </main>
+=======
+        a {
+            color: #0077cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .diagram-box {
+            border: 1px solid #ccc;
+            padding: 15px;
+            margin-top: 10px;
+            background: #fafafa;
+            border-radius: 8px;
+        }
+
+        .example {
+            margin-top: 15px;
+            padding: 15px;
+            background: #eef6ff;
+            border-left: 4px solid #0077cc;
+            font-family: monospace;
+            white-space: pre-line;
+        }
+    </style>
+</head>
+<body>
+    <h1>UML</h1><br/>
+
+    <section>
+        <h2>Mis on UML?</h2>
+        <p>
+            UML ehk (Unified Modeling Language) on graafiline keel,
+            mida kasutatakse tarkvara ja süsteemide visualiseerimiseks,
+            kavandamiseks ning dokumenteerimiseks. See aitab arendajatel 
+            ja ärianalüütikutel keerulisi süsteeme paremini mõista.
+        </p>
+    </section>
+
+    <section>
+        <h2>UML diagrammide indeks</h2>
+        <ul>
+            <li><a href="flowchart.html">Flowchart / Activity Diagram</a></li>
+            <li><a href="erd.html">ERD (Entity Relationship Diagram)</a></li>
+            <li>Use Case Diagram</li>
+            <li>Class Diagram</li>
+            <li>Sequence Diagram</li>
+            <li>State Diagram</li>
+            <li>Component Diagram</li>
+
+        </ul>
+    </section>
+
+    <section>
+        <h2>Use Case Diagram</h2>
+        <p>
+            Use Case Diagram ekh (kasutusjuhtude diagramm) see on 
+            visuaalne UML-diagramm,mis kirjeldab süsteemi funktsioone.
+            See näitab, kuidas kasutajad või süsteemid kavandatav tarkvaraga suhtleb.
+        </p>
+
+        <div class="diagram-box">
+            <strong>Elemendid:</strong>
+            <ul>
+                <li>Actot(tegutseja)</li>
+                <li>Use Case (kasutajjuht)</li>
+                <li>System Boundary(süsteemi piir)</li>
+                <li>Association (seos)</li>
+                <li>Include (kaasamine)</li>
+                <li>Extend (laiendamine)</li>
+                <li>Generalization (üldistamine)</li>
+            </ul>
+        </div>
+
+        <section class="big-box right-box">
+            <img src="/images/UseCase.png" alt="Use Case Diagram" style="width: 100%; max-width: 600px; margin-top: 20px;">
+        </section>
+
+        <div class="example">
+            [Kasutaja] --> (Logi sisse) <br/>
+            [Admin] --> (Halda kasutajaid) <br/>
+        </div>
+    </section>
+
+    <section>
+        <h2>Class Diagram</h2>
+        <p>
+            Class Diagram näitab klasside struktuuri, nende omadusi
+            ja meetodied ja seoseid
+        </p>
+
+         <div class="diagram-box">
+            <strong>Elemendid:</strong>
+            <ul>
+                <li>Klassi nimi</li>
+                <li>Atribuudid</li>
+                <li>Meetodid</li>
+                <li>Association</li>
+                <li>Inheritance</li>
+                <li>Composition</li>
+            </ul>
+        </div>
+
+        <section class="big-box right-box">
+            <img src="/images/class_diagram.png" alt="Class Diagram" style="width: 100%; max-width: 600px; margin-top: 20px;">
+        </section>
+
+        <div class="example">
+            ------------------
+            User
+            ------------------
+            - name
+            - email
+            ------------------
+            + login()
+            + logout()
+        </div>
+    </section>
+    </section>
+
+     <section>
+        <h2>Sequence Diagram</h2>
+        <p>
+            Sequence diagram näitab objektide vahelist suhtlust ajas.
+        </p>
+
+        <div class="diagram-box">
+            <strong>Elemendid:</strong>
+            <ul>
+                <li>Lifeline</li>
+                <li>Activation bar</li>
+                <li>Message arrow</li>
+                <li>Return message</li>
+            </ul>
+        </div>
+
+        <section class="big-box right-box">
+            <img src="/images/sequence_diagram.png" alt="Sequence Diagram" style="width: 100%; max-width: 600px; margin-top: 20px;">
+        </section>
+
+        <div class="example">
+            User -> App: Login request
+            App -> Database: Check credentials
+            Database -> App: Success
+            App -> User: Login confirmed
+        </div>
+    </section>
+
+    <section>
+        <h2>State Diagram</h2>
+        <p>
+            State diagram näitab objekti erinevaid olekuid ja nende vahelisi üleminekuid.
+        </p>
+
+        <div class="diagram-box">
+            <strong>Elemendid:</strong>
+            <ul>
+                <li>Alguspunkt</li>
+                <li>Olek</li>
+                <li>Üleminek</li>
+                <li>Lõppolek</li>
+            </ul>
+        </div>
+
+        <section class="big-box right-box">
+            <img src="/images/state_diagram.png" alt="State Diagram" style="width: 100%; max-width: 600px; margin-top: 20px;">
+        </section>
+
+        <div class="example">
+            Start -> Pending -> Approved -> Completed
+        </div>
+    </section>
+
+    <section>
+        <h2>Component Diagram</h2>
+        <p>
+            Component diagram näitab süsteemi komponente ja nende sõltuvusi.
+        </p>
+
+        <div class="diagram-box">
+            <strong>Elemendid:</strong>
+            <ul>
+                <li>Komponent</li>
+                <li>Liides (interface)</li>
+                <li>Sõltuvus (dependency)</li>
+            </ul>
+        </div>
+
+        <section class="big-box right-box">
+            <img src="/images/component_diagram.png" alt="Component Diagram" style="width: 100%; max-width: 600px; margin-top: 20px;">
+        </section>
+
+        <div class="example">
+            Frontend ---> Backend ---> Database
+        </div>
+    </section>
+>>>>>>> dee634081f22403fb90fb4c5107531ba57d5e0c4
 
 </body>
 </html>
